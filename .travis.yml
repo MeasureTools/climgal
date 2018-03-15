@@ -1,0 +1,19 @@
+sudo: true
+dist: trusty
+
+cache:
+    apt: true
+    ccache: true
+
+language: cpp
+
+services:
+  - docker
+
+matrix:
+  include:
+  - install: .travis-ci/install_docker.sh
+    script: 
+      - .travis-ci/load_docker_image.sh 'base/archlinux' 'climgal'
+      - .travis-ci/docker_bash.sh 'climgal' 'pacman -Syu --noconfirm clang cmake boost boost-libs clang-tools-extra make'
+      - .travis-ci/docker_bash.sh 'climgal' 'cd climgal; mkdir build; cd build; cmake ..; make'

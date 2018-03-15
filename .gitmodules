@@ -1,0 +1,6 @@
+[submodule "extern/readerlib"]
+	path = extern/readerlib
+	url = git@github.com:MeasureTools/readerlib.git
+[submodule "extern/docopt"]
+	path = extern/docopt
+	url = git@github.com:docopt/docopt.cpp.git
