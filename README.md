@@ -1,11 +1,11 @@
 <!-- MarkdownTOC -->
 
 - [CLI Tool to transcode measurement data](#cli-tool-to-transcode-measurement-data)
-    - [Usage](#usage)
-    - [How to build](#how-to-build)
-    - [How to use example](#how-to-use-example)
-    - [License](#license)
-    - [Acknowledgments](#acknowledgments)
+  - [Usage](#usage)
+  - [How to build](#how-to-build)
+  - [How to use example](#how-to-use-example)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
 
 <!-- /MarkdownTOC -->
 
@@ -54,7 +54,7 @@ make
 ```bash
 climgal --file=example.csv --begin=10 --end=20 --resolution=1 --format=dlog > output.dlog
 ```
-In this example, the measurement *example.csv* is our **source**. Only samples between 10s (begin) and 20s (end) are used to write the new measurement data. Also the **resolution** is set to 1Hz. If the source measurement has a higher or lower resolution, the data is resampled according to the new samplerate. As output format **dlog** was chosen which is a format used by KeySight. Finally the new measurement data is saved to the file *output.dlog*.
+In this example, the measurement *example.csv* is our **source**. Only samples between 10s (begin) and 20s (end) are used to write the new measurement data. Also the **resolution** is set to 1Hz. If the source measurement has a higher or lower resolution, the data is resampled according to the new samplerate. As output format **dlog** was chosen which is a format used by Keysight. Finally the new measurement data is saved to the file *output.dlog*.
 
 ## License
 
